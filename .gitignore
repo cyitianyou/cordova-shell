@@ -91,3 +91,6 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+.vscode/
+package-lock.json
+jsconfig.json
