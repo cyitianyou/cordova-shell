@@ -18,7 +18,7 @@ Path环境变量，在原始内容基础上加入%JAVA_HOME%\bin; %JAVA_HOME%\jr
 Path环境变量，在原始内容基础上加入%ANDROID_SDK_HOME%\platform-tools;%ANDROID_SDK_HOME%\tools
 
 双击“SDK Manager”，启动SDK Manager
-现在合适版本的Android-API 
+下载合适版本的Android-API 
 ~~~
 * 安装Gradle
 ~~~
