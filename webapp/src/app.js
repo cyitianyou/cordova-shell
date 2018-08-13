@@ -7,19 +7,23 @@ import router from './router'
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
+var that = this
 var app = {
     initialize: function() {
-        document.addEventListener('deviceready', this.onDeviceReady.bind(this), false)
+        document.addEventListener('deviceready', this.onDeviceReady.bind(that), false)
     },
     onDeviceReady: function() {
-        new Vue({
+        try {
+            new Vue({
                 el: '#app',
                 router,
-                store,
                 template: '<Entry/>',
                 components: { Entry }
             })
-            // window.navigator.splashscreen.hide()
+        } catch (e) {
+            alert(e.message)
+        }
+        // window.navigator.splashscreen.hide()
     }
 }
 app.initialize()
